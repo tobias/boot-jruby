@@ -1,4 +1,4 @@
-# boot-jruby - eval JRuby code from boot
+# boot-jruby - eval JRuby code from [boot](http://boot-clj.com/).
 
 ## Installation
 
