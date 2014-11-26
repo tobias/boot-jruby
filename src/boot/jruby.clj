@@ -34,6 +34,8 @@
    g gem       NAME:VERSION [[str str]] "gems to install before eval"
    p gem-path  PATH         [str]       "additional gem paths to use"]
 
+  ;; TODO: figure out what keys (if any) these should have
+  ;; TODO: replace with new tempfile mechanism when it is released
   (let [tgt (boot/mktgtdir!)
         src (boot/mksrcdir!)
         rsc (boot/mkrscdir!)
