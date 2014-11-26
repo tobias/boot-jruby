@@ -3,9 +3,11 @@
                   [clj.rb "0.2.1"]]
   :src-paths    ["src"])
 
+(def +version+ "0.1.0")
+
 (task-options!
   pom [:project 'boot-jruby
-       :version "0.1.0"
+       :version +version+
        :description "Boot task to execute JRuby code."
        :url "https://github.com/tobias/boot-jruby"
        :scm {:url "https://github.com/tobias/boot-jruby"}
