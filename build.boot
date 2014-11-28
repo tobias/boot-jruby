@@ -1,6 +1,6 @@
 (set-env!
   :dependencies '[[org.clojure/clojure "1.6.0" :scope "provided"]
-                  [clj.rb "0.2.1"]]
+                  [clj.rb "0.3.0"]]
   :src-paths    ["src"])
 
 (def +version+ "0.2.0-SNAPSHOT")
