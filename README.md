@@ -4,7 +4,7 @@
 
 boot-jruby is published to [Clojars](https://clojars.org/boot-jruby). To use from boot:
 
-    [boot-jruby "0.1.0"]
+    [boot-jruby "0.2.0"]
 
 ## Usage
 

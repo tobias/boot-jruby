@@ -1,6 +1,6 @@
 (set-env!
   :dependencies '[[org.clojure/clojure "1.6.0"]
-                  [boot-jruby "0.2.0-SNAPSHOT"]]
+                  [boot-jruby "0.2.0"]]
   :rsc-paths    #{"resources"})
 
 (require
