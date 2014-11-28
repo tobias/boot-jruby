@@ -8,7 +8,7 @@ boot-jruby is published to [Clojars](https://clojars.org/boot-jruby). To use fro
 
 ## Usage
 
-See `boot jruby -h` for details.
+See `boot jruby -h` for details, and see the `examples/` dir.
 
 ## License
 
