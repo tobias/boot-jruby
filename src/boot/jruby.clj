@@ -18,8 +18,6 @@
 
 (defn make-jruby
   []
-  ;; TODO: figure out what keys (if any) these should have
-  ;; TODO: replace with new tempfile mechanism when it is released
   (let [pod (pods :refresh)
         tgt (boot/temp-dir!)
         src (boot/temp-dir!)
