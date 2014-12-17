@@ -25,7 +25,9 @@
   "A debug task to println any files with :ext in the fileset"
   [e ext PATH [str] "extensions to show"]
   (with-pre-wrap fileset
-    (doseq [:let [out-f (output-files fileset)]
+    (doseq [:let [out-f (->> [user-files input-files output-files]
+                          (mapcat #(% fileset))
+                          set)]
             f (if (seq ext) (by-ext ext out-f) out-f)]
       (println (str "\n" (tmppath f) ":\n\n")
         (slurp (tmpfile f))))
