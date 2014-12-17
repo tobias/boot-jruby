@@ -1,9 +1,14 @@
 (set-env!
   :dependencies   '[[org.clojure/clojure "1.6.0" :scope "provided"]
-                    [clj.rb "0.3.0"]]
+                    [clj.rb "0.3.0"]
+                    [adzerk/bootlaces "0.1.5" :scope "test"]]
   :resource-paths #{"src"})
 
+(require '[adzerk.bootlaces :refer :all])
+
 (def +version+ "0.3.0")
+
+(bootlaces! +version+)
 
 (task-options!
   pom {:project 'boot-jruby
@@ -12,12 +17,4 @@
        :url "https://github.com/tobias/boot-jruby"
        :scm {:url "https://github.com/tobias/boot-jruby"}
        :license {:name "Apache Software License - v 2.0"
-                 :url "http://www.apache.org/licenses/LICENSE-2.0"}}
-  push {:gpg-sign true
-        :gpg-user-id "toby@tcrawley.org"
-        :repo "clojars"})
-
-(deftask build
-  "Build and install the artifact."
-  []
-  (comp (pom) (jar) (install)))
+                 :url "http://www.apache.org/licenses/LICENSE-2.0"}})

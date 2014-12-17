@@ -1,3 +1,4 @@
 .boot
 .nrepl-*
 target
+gpg.edn
