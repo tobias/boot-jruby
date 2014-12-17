@@ -3,7 +3,7 @@
                     [clj.rb "0.3.0"]]
   :resource-paths #{"src"})
 
-(def +version+ "0.2.0")
+(def +version+ "0.3.0")
 
 (task-options!
   pom {:project 'boot-jruby
