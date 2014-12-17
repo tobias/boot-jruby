@@ -16,7 +16,10 @@
            ;; installs the haml gem, unless it's already installed
            :gem [["haml" "4.0.5"]]
            ;; sets data from clojure in the ruby runtime, as globals
-           :set-var {"$haml_files" (->> fileset input-files (by-ext [".haml"]) (mapv #(.getAbsolutePath (tmpfile %))))
+           :set-var {"$haml_files" (->> fileset
+                                     input-files
+                                     (by-ext [".haml"])
+                                     (mapv #(.getAbsolutePath (tmpfile %))))
                      "$data"       {:what_the "nuts"}}
            ;; evaluates resources/render_haml.rb, that does the actual work
            :eval-file [(-> "render_haml.rb" io/resource io/file .getAbsolutePath)]))))
