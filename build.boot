@@ -16,5 +16,5 @@
        :description "Boot task to execute JRuby code."
        :url "https://github.com/tobias/boot-jruby"
        :scm {:url "https://github.com/tobias/boot-jruby"}
-       :license {:name "Apache Software License - v 2.0"
-                 :url "http://www.apache.org/licenses/LICENSE-2.0"}})
+       :license {"Apache Software License - v 2.0"
+                 "http://www.apache.org/licenses/LICENSE-2.0"}})
